@@ -3,23 +3,32 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Hello Ionic</ion-title>
+    <ion-title>Brexitonic</ion-title>
   </ion-navbar>
 </ion-header>
 
 
 <ion-content padding>
 
-  <h3>Welcome to your first Ionic app!</h3>
+  <h3>Brexit Deadline: 29th March 2019</h3>
 
-  <p>
-    This starter project is our way of helping you get a functional app running in record time.
-  </p>
-  <p>
-    Follow along on the tutorial section of the Ionic docs!
-  </p>
-  <p>
-    <button ion-button color="primary" menuToggle>Toggle Menu</button>
-  </p>
 
+  <div id="clockdiv">
+    <div>
+      <span class="days">{{counter.days}}</span>
+      <div class="smalltext">Days</div>
+    </div>
+    <div>
+      <span class="hours">{{counter.hours}}</span><br>
+      <div class="smalltext">Hours</div>
+    </div>
+    <div>
+      <span class="minutes">{{counter.minutes}}</span><br>
+      <div class="smalltext">Minutes</div>
+    </div>
+    <div>
+      <span class="seconds">{{counter.seconds}}</span>
+      <div class="smalltext">Seconds</div>
+    </div>
+  </div>
 </ion-content>
