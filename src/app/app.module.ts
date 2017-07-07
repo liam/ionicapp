@@ -12,6 +12,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { CloudSettings, CloudModule } from '@ionic/cloud-angular';
 
+import { HttpModule } from '@angular/http';
+
+
 const cloudSettings: CloudSettings = {
   'core': {
     'app_id': '85f4e55b'
@@ -27,6 +30,7 @@ const cloudSettings: CloudSettings = {
   ],
   imports: [
     BrowserModule,
+    HttpModule,
     IonicModule.forRoot(MyApp),
     CloudModule.forRoot(cloudSettings)
   ],
