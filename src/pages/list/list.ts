@@ -34,4 +34,12 @@ export class ListPage {
       this.items = newItems;
     }
 
+    loadMore() {
+      console.log('loading more...');
+    }
+
+    doRefresh() {
+      console.log('refreshing...');
+    }
+
 }
