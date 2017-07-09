@@ -8,6 +8,7 @@ import { Http } from '@angular/http';
   selector: 'page-list',
   templateUrl: 'list.html'
 })
+
 export class ListPage {
   newItems: any;
   items: any;
