@@ -30,7 +30,7 @@ export class MyApp {
     // set our app's pages
     this.pages = [
       { title: 'Brexit Countdown', component: HelloIonicPage },
-      { title: 'My First List', component: ListPage }
+      { title: 'News Feed', component: ListPage }
     ];
   }
 
