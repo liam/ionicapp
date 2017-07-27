@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Http } from '@angular/http';
 import { NavController, NavParams } from 'ionic-angular';
-
+import { ItemDetailsPage } from '../item-details/item-details';
 
 @Component({
   selector: 'page-hello-ionic',
@@ -55,6 +55,12 @@ export class HelloIonicPage {
 
   doRefresh() {
     console.log('refreshing...');
+  }
+
+  itemTapped(event, item) {
+    this.navCtrl.push(ItemDetailsPage, {
+      item: item
+    });
   }
 }
   function getTimeRemaining(deadline: Date) {
