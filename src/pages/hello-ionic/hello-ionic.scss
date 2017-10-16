@@ -13,21 +13,27 @@ h1 {
 #clockdiv {
 	font-family: sans-serif;
 	color: #ffcc00;
-	display: inline-block;
-	font-weight: 100;
+	display: flex;
+	font-weight: bold;
 	text-align: center;
 	font-size: 20px;
+	justify-content: center;
 	>div {
 		padding: 10px;
 		border-radius: 3px;
-		background: #6684c1;
 		display: inline-block;
+		border-style: solid;
+		border-width: 1px;
+		border-color: #6684c1;
 	}
 	div {
 		>span {
 			padding: 15px;
 			border-radius: 3px;
-			background:#003399;
+			border-style: solid;
+			border-width: 1px;
+			border-color: #003399;
+			background-color: #003399;
 			display: inline-block;
 		}
 	}
@@ -36,4 +42,13 @@ h1 {
 	padding-top: 5px;
 	font-size: 16px;
 	color: black;
+	word-wrap: normal;
+}
+
+.list-md {
+    margin: 1px 0 16px;
+}
+
+.feed-header {
+	font-weight: bold;
 }
